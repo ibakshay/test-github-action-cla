@@ -20,6 +20,6 @@ jobs:
           path-To-cladocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
           # branch should not be protected
           branch: 'master'
-          allowlist: ibakshay,user2,bot*
+          allowlist: user2,bot*
           empty-commit-flag: false
           blockchain-storage-flag: false
