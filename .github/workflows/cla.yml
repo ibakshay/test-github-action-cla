@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "CLA Check"
-        uses: ockam-network/cla-action@master
+        uses: cla-assistant/github-action@master
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PERSISTANCE_GITHUB_TOKEN: ${{ secrets.PERSISTANCE_GITHUB_TOKEN }}
