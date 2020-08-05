@@ -24,5 +24,5 @@ jobs:
           allowlist: user1,user2,bot*
           empty-commit-flag: false
           #optional inputs
-          remote-repository-name: todo-app
+          remote-repository-name: personal
           remote-organization-name: ibakshay
