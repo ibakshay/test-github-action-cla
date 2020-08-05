@@ -15,6 +15,7 @@ jobs:
         uses: cla-assistant/github-action@dev
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REMOTE_REPOSITORY_TOKEN: ${{secrets.REMOTE_REPOSITORY_TOKEN}}
         with: 
           path-to-signatures: 'signatures/version1/cla.json'
           path-to-cla-document: 'https://github.com/cla-assistant/github-action/blob/master/SAPCLA.md'
@@ -22,4 +23,5 @@ jobs:
           branch: 'master'
           allowlist: user1,user2,bot*
           empty-commit-flag: false
-          blockchain-storage-flag: false
+          remote-repository-name: cla-signature-storage
+          remote-organization-name: ibakshay
