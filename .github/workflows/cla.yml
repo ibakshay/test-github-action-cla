@@ -23,5 +23,6 @@ jobs:
           branch: 'master'
           allowlist: user1,user2,bot*
           empty-commit-flag: false
-          remote-repository-name: blog-nestjs
+          #optional inputs
+          remote-repository-name: cla-signature-storage
           remote-organization-name: ibakshay
