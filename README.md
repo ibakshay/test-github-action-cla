@@ -1,2 +1,1 @@
-# test-github-action-cla      
- 
+# test-github-action-cla 
