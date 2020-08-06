@@ -22,4 +22,3 @@ jobs:
           branch: 'master'
           allowlist: user2,bot*
           empty-commit-flag: false
-          blockchain-storage-flag: false
