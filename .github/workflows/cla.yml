@@ -23,5 +23,5 @@ jobs:
           branch: 'master'
           allowlist: user2,bot*
           empty-commit-flag: false
-          remote-repository-name: personal
+          remote-repository-name: safebees
           remote-organization-name: ibakshay
