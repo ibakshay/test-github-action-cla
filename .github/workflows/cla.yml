@@ -23,3 +23,5 @@ jobs:
           branch: 'master'
           allowlist: user2,bot*
           empty-commit-flag: false
+          remote-repository-name: countries-angular-app
+          remote-organization-name: ibakshay
