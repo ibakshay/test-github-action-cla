@@ -15,7 +15,7 @@ jobs:
         uses: cla-assistant/github-action@dev
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         # REMOTE_REPOSITORY_TOKEN : ${{ secrets.REMOTE_REPOSITORY_TOKEN }}
+          REMOTE_REPOSITORY_TOKEN : ${{ secrets.REMOTE_REPOSITORY_TOKEN }}
         with: 
           path-to-signatures: 'signatures/version1/cla.json'
           path-to-cla-document: 'https://github.com/cla-assistant/github-action/blob/master/SAPCLA.md'
@@ -23,10 +23,10 @@ jobs:
           branch: 'master'
           allowlist: user2,bot*
           empty-commit-flag: false
-         # remote-repository-name: safebees
-          # remote-organization-name: ibakshay  
+          remote-repository-name: safebees
+          remote-organization-name: ibakshay  
           #optional
           signed-commit-message: 'chore(cla): $contributorName has signed the CLA in #$pullRequestNo'
           request-comment-message: 'Introductory message to ask new contributors to sign'
           create-file-commit-message: 'Commit message when a new file is created'
-          all-signed-comment-message: 'Commit message when everyone has signed, defaults to **CLA Assistant Lite** All Contributors have signed the CLA.'
+          #all-signed-comment-message: 'Commit message when everyone has signed, defaults to **CLA Assistant Lite** All Contributors have signed the CLA.'
