@@ -15,7 +15,7 @@ jobs:
         uses: cla-assistant/github-action@refactor
         env: 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REMOTE_REPOSITORY_TOKEN : ${{ secrets.REMOTE_REPOSITORY_TOKEN }}
+        #  REMOTE_REPOSITORY_TOKEN : ${{ secrets.REMOTE_REPOSITORY_TOKEN }}
         with: 
           path-to-signatures: 'signatures/version1/cla.json'
           path-to-cla-document: 'https://github.com/cla-assistant/github-action/blob/master/SAPCLA.md'
