@@ -23,8 +23,8 @@ jobs:
           branch: 'master'
           allowlist: user1,bot*
           empty-commit-flag: false
-          remote-repository-name: safebees
-          remote-organization-name: ibakshay  
+         # remote-repository-name: safebees
+       #   remote-organization-name: ibakshay  
           #optional
         #  signed-commit-message: 'chore(cla): $contributorName has signed the CLA in #$pullRequestNo'
          # custom-notsigned-prcomment: 'Introductory message to ask new contributors to sign'
