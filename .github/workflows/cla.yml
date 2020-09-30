@@ -24,7 +24,6 @@ jobs:
           branch: 'master'
           remote-repository-name: cla-signature-storage 
           remote-organization-name: ibakshay
-          empty-commit-flag: false
           use-dco-flag: true
           #optional
         #  signed-commit-message: 'chore(cla): $contributorName has signed the CLA in #$pullRequestNo'
