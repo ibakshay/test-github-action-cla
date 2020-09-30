@@ -18,13 +18,13 @@ jobs:
           PERSONAL_ACCESS_TOKEN : ${{ secrets.REMOTE_REPOSITORY_TOKEN }}
         with:
           allowlist: user1,bot*  
-          path-to-signatures: 'signatures/version2/cla.json'
+          path-to-signatures: 'signatures/version3/cla.json'
           path-to-document: 'https://github.com/cla-assistant/github-action/blob/master/SAPCLA.md'
           # branch should not be protected
           branch: 'master'
           remote-repository-name: cla-signature-storage 
           remote-organization-name: ibakshay
-          use-dco-flag: true
+          use-dco-flag: false
           #optional
         #  signed-commit-message: 'chore(cla): $contributorName has signed the CLA in #$pullRequestNo'
          # custom-notsigned-prcomment: 'Introductory message to ask new contributors to sign'
