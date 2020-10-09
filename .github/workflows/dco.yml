@@ -1,4 +1,4 @@
-name: "DCO Assistant"
+name: "CLA Assistant"
 on:
   issue_comment:
     types: [created]
@@ -6,10 +6,10 @@ on:
     types: [opened,closed,synchronize]
     
 jobs:
-  DCOAssistant:
+  CLAAssistant:
     runs-on: ubuntu-latest
     steps:
-      - name: "DCO Assistant"
+      - name: "CLA Assistant"
         if: (github.event.comment.body == 'recheck' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA' || github.event.comment.body == 'I have read the DCO Document and I hereby sign the DCO') || github.event_name == 'pull_request_target'
         # Alpha Release
         uses: cla-assistant/github-action@bug-fix-dco-support
@@ -18,7 +18,7 @@ jobs:
           PERSONAL_ACCESS_TOKEN : ${{ secrets.REMOTE_REPOSITORY_TOKEN }}
         with:
           allowlist: user1,bot*  
-          path-to-signatures: 'signatures/version12/cla.json'
+          path-to-signatures: 'signatures/version15/cla.json'
           path-to-document: 'https://github.com/cla-assistant/github-action/blob/master/SAPCLA.md'
           # branch should not be protected
           branch: 'master'
