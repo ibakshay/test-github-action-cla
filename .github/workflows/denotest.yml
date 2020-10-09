@@ -12,4 +12,4 @@ jobs:
          deno-version: v1.4
       - run: |
           deno --version
-          deno run https://deno.land/std/examples/welcome.ts
+          deno run --allow-net https://deno.land/x/distancecalculator/test-it.ts
