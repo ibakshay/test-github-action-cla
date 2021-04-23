@@ -11,5 +11,5 @@ jobs:
       - uses: alex-page/github-project-automation-plus@v0.3.0
         with:
           project: test-project
-          column: Triage
+          column: triage
           repo-token: ${{ secrets.test }}
